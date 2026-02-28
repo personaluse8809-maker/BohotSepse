@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: firefox-vnc
+    runtime: docker
+    plan: standard
+    disk:
+      name: firefox-data
+      mountPath: /home/user
+      sizeGB: 5
+      
